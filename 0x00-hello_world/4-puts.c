@@ -1,4 +1,7 @@
 #include <stdio.h>
+/*
+ * Description: Betty documentation style
+ */
 int main(void)
 {
 
