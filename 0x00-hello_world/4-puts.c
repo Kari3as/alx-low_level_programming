@@ -1,10 +1,11 @@
 #include <stdio.h>
-/*
- *no description found for function main
+
+/**
+ * main - entry point
  *
- *Description: Betty documentation style
+ * Description: A C program that prints puts function
  *
- * Retrun 0
+ * Retrun: Always 0 (suceess)
 */
 int main(void)
 {
