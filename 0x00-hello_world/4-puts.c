@@ -1,7 +1,11 @@
 #include <stdio.h>
 /*
- * Description: Betty documentation style
- */
+ *no description found for function main
+ *
+ *Description: Betty documentation style
+ *
+ * Retrun 0
+*/
 int main(void)
 {
 
