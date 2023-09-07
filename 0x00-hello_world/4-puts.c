@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ *  main - Entry point
  *
- * Description: A C program that prints puts function
+ * Description: This function is the entry point of the program.
  *
- * Retrun: Always 0 (suceess)
-*/
+ * Return: 0 upon successful execution.
+ */
+
 int main(void)
 {
 
