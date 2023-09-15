@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_numbers - user defuned func
+ * print_numbers - user defined func
  *
- * Description: prinited digit
+ * Description: prinited nums 0-9
  *
  * Retrun: void
  */
@@ -17,5 +17,5 @@ void print_numbers(void)
 		_putchar(i);
 	}
 
-	_putchar('\n');
+	_putchar("\n");
 }
