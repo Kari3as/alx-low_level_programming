@@ -1,11 +1,6 @@
 #include "main.h"
-
 /**
- * print_most_numbers -  user defined func
- *
- * Description:  print most nums
- *
- * Result: void
+* print_most_numbers -  prints the numbers except 2 and 4.
 */
 void print_most_numbers(void)
 {
@@ -13,8 +8,10 @@ void print_most_numbers(void)
 
 	for (i = '0'; i <= '9'; i++)
 	{
-		if (!(i == '2' || i == '4'))
+		if (i != '2' && i != '4')
+		{
 			_putchar(i);
+		}
 	}
 	_putchar('\n');
 }
