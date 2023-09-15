@@ -5,7 +5,7 @@
  *
  * Description: prinited nums 0-9
  *
- * Retrun: void
+ * Return: void
  */
 
 void print_numbers(void)
