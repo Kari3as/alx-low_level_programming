@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE -o `echo $CFILE |prename 's/.c$/.o' *.c`
+gcc -c $CFILE -o `echo $CFILE |rename.ul .c .o *.c`
