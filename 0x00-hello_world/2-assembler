@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE -o `echo $CFILE |mmv "*.c" "#1.s"`
+gcc -S $CFILE -o `echo $CFILE |tr '.c' '.s'`
