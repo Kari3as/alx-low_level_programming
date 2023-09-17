@@ -3,14 +3,13 @@
 /**
  *  main - Entry point
  *
- * Description: This function is the entry point of the program.
+ * Description: print string
  *
- * Return: 0 upon successful execution.
+ * Return: 0
  */
 
 int main(void)
 {
-
-puts("Programming is like building a multilingual puzzle");
-        return (0);
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
