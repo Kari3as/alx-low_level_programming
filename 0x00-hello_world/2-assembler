@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE -o `echo $CFILE |rename.ul .c .s *.c `
+gcc -S $CFILE -o `echo $CFILE |mmv "*.c" "#1.s"`
