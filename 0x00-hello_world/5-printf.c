@@ -3,9 +3,9 @@
 /**
  *  main - Entry point
  *
- * Description: This function is the entry point of the program.
+ * Description: print string with printf func
  *
- * Return: 0 upon successful execution.
+ * Return: 0
  */
 
 int main(void)
