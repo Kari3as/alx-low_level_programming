@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * int _strlen -  usr def func
+ * _strlen -returns lengh of a string
  *
- * @s - retun leng of str
+ * @s: point to str
  *
- * Retun: int
+ * Return: length
 */
 
 int _strlen(char *s)
