@@ -9,9 +9,11 @@
 
 void _puts(char *str)
 {
+	char k = *s;
+
 	while (*str)
 	{
-		write(1, str, 1);
+		write(1, k, 1);
 		str++;
 	}
 	write(1, "\0", 1);
