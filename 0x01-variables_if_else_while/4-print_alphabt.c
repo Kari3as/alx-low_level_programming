@@ -9,13 +9,13 @@
  */
 int main(void)
 {
-	int i;
+	char chr;
 
-	for (i = 97; i < 123; i++)
+	for (chr = 'a'; chr <= 'z'; chr++)
 	{
-		if (i != 101 && i != 113)
+		if (chr != 'e' && chr != 'z')
 		{
-			putchar(i);
+			putchar(chr);
 		}
 	}
 	putchar('\n');
