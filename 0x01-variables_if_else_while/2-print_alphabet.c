@@ -9,7 +9,7 @@ int main(void)
 {
 	for (char chr = 'a'; chr <= 'z'; chr++)
 	{
-		putchar(alp[i]);
+		putchar(chr);
 	}
 	putchar('\n');
 	return (0);
