@@ -14,7 +14,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int n = 0;
 
-	for (; *s != '\0'; s++)
+	for (; *s != '\0' && *s >= 'a'; s++)
 	{
 		char *temp_f = accept;
 
