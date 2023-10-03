@@ -10,7 +10,7 @@
  * Return:0
 */
 
-int main(int argc, char __attribute__((unsed)) *argv[])
+int main(int argc, char *argv[] _attribute__((unused)))
 {
 	int i;
 
