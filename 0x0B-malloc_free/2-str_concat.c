@@ -13,10 +13,11 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned  int leng_s1 = 0;
+	unsigned int leng_s1 = 0;
 	unsigned int  leng_s2 = 0;
+	unsigned int total_leng;
 	char *ptr;
-	int i;
+	unsigned int i;
 	char *temp1 = s1;
 	char *temp2 = s2;
 
@@ -34,7 +35,7 @@ char *str_concat(char *s1, char *s2)
 		leng_s2 += 1;
 		temp2++;
 	}
-	unsigned int total_leng = leng_s1 + leng_s2 + 1;
+	total_leng = leng_s1 + leng_s2 + 1;
 
 	ptr = malloc(total_leng);
 	temp1 = s1;
