@@ -20,20 +20,22 @@ char *_strdup(char *str)
 
 	char *temp = str;
 
+	if (str ==  NULL)
+	{
+		return (NULL);
+	}
+
 	while (*temp != '\0')
 
 	{
 		leng = leng + 1;
 		temp++;
 	}
-
-
-
 	ptr = malloc(leng + 1);
 
 	temp = str;
 
-	if (ptr == NULL || temp == NULL)
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
