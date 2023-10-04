@@ -30,6 +30,8 @@ char *_strdup(char *str)
 
 	ptr = malloc(leng + 1);
 
+	temp = str;
+
 	if (ptr == NULL)
 	{
 		return (NULL);
@@ -38,10 +40,10 @@ char *_strdup(char *str)
 	{
 		for (i = 0; i < leng; i++)
 		{
-			temp = str;
 			ptr[i] = *temp;
 			temp++;
 		}
+		ptr[leng] = '\0';
 	}
 return (ptr);
 }
