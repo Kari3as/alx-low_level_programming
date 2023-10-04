@@ -15,7 +15,7 @@ char *_strdup(char *str)
 
 	unsigned int i;
 
-	int leng  = 0;
+	unsigned int leng  = 0;
 
 	char *temp = str;
 
