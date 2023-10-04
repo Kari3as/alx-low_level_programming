@@ -38,6 +38,7 @@ char *_strdup(char *str)
 	{
 		for (i = 0; i < leng; i++)
 		{
+			temp = str;
 			ptr[i] = *temp;
 			temp++;
 		}
