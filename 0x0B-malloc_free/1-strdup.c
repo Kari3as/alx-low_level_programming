@@ -15,7 +15,18 @@ char *_strdup(char *str)
 
 	unsigned int i;
 
-	ptr = malloc(sizeof(str));
+	char *temp = str;
+
+	while (*temp != '\0')
+
+	{
+		leng = leng + 1;
+		temp++;
+	}
+
+
+
+	ptr = malloc(leng + 1);
 
 	if (ptr == NULL)
 	{
@@ -23,7 +34,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for (i = 0; i < sizeof(str) - 1; i++)
+		for (i = 0; i < leng; i++)
 		{
 			ptr[i] = *str;
 			str++;
