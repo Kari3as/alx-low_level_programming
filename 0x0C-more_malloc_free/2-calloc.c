@@ -5,19 +5,20 @@
  * setmem -  set memory to 0
  * @s: pointer to allo memo
  * @c: zero
+ * @n: size of memo block
  * Return: pointer
 */
 
 
-char *setmem(char *s, char c)
+char *setmem(char *s, char c, unsigned int n)
 {
-	while (*s)
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
 	{
-		*s = c;
-		s++
+		s[i++] = c;
 	}
 	return (s);
-
 }
 
 /**
@@ -38,7 +39,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	setmem(ptr, 0);
+	setmem(ptr, 0, nmemb * size);
 
 	return (ptr);
 }
