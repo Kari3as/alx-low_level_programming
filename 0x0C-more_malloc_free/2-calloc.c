@@ -32,9 +32,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *ptr;
 
+	if (nmemb == 0 || size == 0)
+	{
+		return (NULL);
+	}
+
 	ptr = malloc(nmemb * size);
 
-	if (nmemb == 0 || size == 0 || ptr == NULL)
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
@@ -43,4 +48,3 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	return (ptr);
 }
-
