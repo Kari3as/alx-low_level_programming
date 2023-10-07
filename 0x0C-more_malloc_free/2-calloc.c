@@ -16,6 +16,7 @@ char *setmem(char *s, char c)
 		*s = c;
 		s++
 	}
+	return (s);
 
 }
 
