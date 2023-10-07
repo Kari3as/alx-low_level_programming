@@ -16,7 +16,7 @@ char *setmem(char *s, char c, unsigned int n)
 
 	for (i = 0; i < n; i++)
 	{
-		s[i++] = c;
+		s[i] = c;
 	}
 	return (s);
 }
