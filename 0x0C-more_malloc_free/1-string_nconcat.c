@@ -17,11 +17,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i = 0, k, lens1 = 0, lens2 = 0, tlen;
 	char *ptr, *temp1 = s1, *temp2 = s2;
 
-	if (s1 == NULL && s2 == NULL)
-	{
-		s1 = "";
-		s2 = "";
-	}
 	while (*s1 != 0)
 	{
 		lens1 += 1;
