@@ -11,7 +11,7 @@
 
 char *setmem(char *s, char c)
 {
-	while (*s != 0)
+	while (*s)
 	{
 		*s = c;
 		s++
