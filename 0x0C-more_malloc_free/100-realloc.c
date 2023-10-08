@@ -8,35 +8,43 @@
  * @new_size: size of new alloc memo
  * Return: pointer to alloc memo
 */
-
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *ptr2;
+	char *ptr1;
+	char *old_ptr;
 	unsigned int i;
 
-	ptr2 = malloc(new_size);
-
-	if (new_size > old_size)
-	{
-		for (i = 0; i < old_size; i++)
-		{
-			ptr2[i] = ptr[i];
-		}
-		free(ptr);
-		return (ptr2);
-	}
-	else if (new_size == old_size)
-	{
+	if (new_size == old_size)
 		return (ptr);
-	}
-	else if (ptr == NULL && ptr2 != NULL)
-	{
-		return (ptr2);
-	}
-	else if (new_size == 0 && ptr != NULL)
+
+	if (new_size == 0 && ptr)
 	{
 		free(ptr);
 		return (NULL);
 	}
-	return (ptr2);
+
+	if (!ptr)
+		return (malloc(new_size));
+
+	ptr1 = malloc(new_size);
+	if (!ptr1)
+		return (NULL);
+
+	old_ptr = ptr;
+
+	if (new_size < old_size)
+	{
+		for (i = 0; i < new_size; i++)
+			ptr1[i] = old_ptr[i];
+	}
+
+	if (new_size > old_size)
+	{
+		for (i = 0; i < old_size; i++)
+			ptr1[i] = old_ptr[i];
+	}
+
+	free(ptr);
+	return (ptr1);
 }
+
