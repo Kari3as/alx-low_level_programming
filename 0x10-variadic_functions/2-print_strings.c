@@ -11,38 +11,35 @@
  *
  * Return: sum or 0
 */
-
 void print_strings(const char *separator, const unsigned int n, ...)
-{
-	va_list args;
-
-	unsigned int i;
-
-	char *str;
-
-	va_start(args, n);
-
-	for (i = 0; i < n; i++)
 	{
-		str = va_arg(args, char *);
+		va_list strings;
+		char *str;
+		unsigned int index;
 
-		if (str == NULL)
+
+		va_start(strings, n);
+
+
+		for (index = 0; index < n; index++)
 		{
-			printf("(nil)");
-		}
-		else
-		{
-			printf("%s", str);
-		}
-		if (separator != NULL && i < n - 1)
-		{
-			printf("%s", separator);
+			str = va_arg(strings, char *);
+
+
+			if (str == NULL)
+				printf("(nil)");
+			else
+				printf("%s", str);
+
+
+			if (index != (n - 1) && separator != NULL)
+				printf("%s", separator);
 		}
 
-		va_end(args);
 
 		printf("\n");
 
+
+		va_end(strings);
 	}
 
-}
