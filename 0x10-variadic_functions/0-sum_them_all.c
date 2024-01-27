@@ -12,7 +12,9 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	int i, sum = 0;
+	unsigned int i;
+	
+	int result = 0;
 
 	va_list lst;
 
@@ -28,12 +30,12 @@ int sum_them_all(const unsigned int n, ...)
 		{
 			int value = va_arg(lst, int);
 			
-			sum += value;
+			result += value;
 		}
 		
 		va_end(lst);
 
-		return (sum);
+		return (result);
 	}
 
 }
